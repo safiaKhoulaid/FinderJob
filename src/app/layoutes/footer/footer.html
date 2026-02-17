@@ -1,0 +1,93 @@
+<footer class="bg-pink-300  text-gray-300 py-16 border-t border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Main Footer Content -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+      <!-- Brand Section -->
+      <div class="sm:col-span-2 md:col-span-1">
+        <a routerLink="/" class="inline-flex items-center gap-3 mb-6 group">
+          <div class="w-10 h-10 bg-gradient-to-br from-pink-500 to-pink-600 rounded-xl flex items-center justify-center group-hover:shadow-lg group-hover:shadow-pink-500/30 transition-shadow duration-300">
+            <span class="text-white font-bold text-lg">J</span>
+          </div>
+          <span class="text-2xl font-bold text-white">JobFinder</span>
+        </a>
+        <p class="text-sm text-gray-400 leading-relaxed mb-6 max-w-xs">
+          La plateforme de recherche d'emploi moderne qui transforme votre carrière et ouvre de nouvelles opportunités.
+        </p>
+        <!-- Social Links -->
+        <div class="flex gap-3">
+          <a *ngFor="let social of socialLinks"
+             [href]="social.url"
+             target="_blank"
+             rel="noopener noreferrer"
+             [attr.aria-label]="social.label"
+             [title]="social.label"
+             class="w-10 h-10 bg-gray-800 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:shadow-lg hover:shadow-pink-600/30">
+            <span class="sr-only">{{ social.label }}</span>
+            <svg class="w-5 h-5 text-white" [attr.data-icon]="social.icon" viewBox="0 0 24 24" fill="currentColor">
+              <ng-container [ngSwitch]="social.icon">
+                <g *ngSwitchCase="'linkedin'">
+                  <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+                </g>
+                <g *ngSwitchCase="'twitter'">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7"/>
+                </g>
+                <g *ngSwitchCase="'facebook'">
+                  <path d="M18 2h-3a6 6 0 00-6 6v3H7v4h2v8h4v-8h3l1-4h-4V8a1 1 0 011-1h3z"/>
+                </g>
+                <g *ngSwitchCase="'instagram'">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="#000"/>
+                  <circle cx="17.5" cy="6.5" r="1.5" fill="#000"/>
+                </g>
+              </ng-container>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links Sections -->
+      <div *ngFor="let section of sections" class="md:col-span-1">
+        <h3 class="text-white font-bold text-base mb-6">{{ section.title }}</h3>
+        <ul class="space-y-3">
+          <li *ngFor="let link of section.links">
+            <ng-container *ngIf="link.route">
+              <a [routerLink]="link.route"
+                 class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm font-medium">
+                {{ link.label }}
+              </a>
+            </ng-container>
+            <ng-container *ngIf="link.external && link.url">
+              <a [href]="link.url"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="text-gray-400 hover:text-pink-500 transition-colors duration-300 text-sm font-medium">
+                {{ link.label }}
+              </a>
+            </ng-container>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-gray-800 my-12"></div>
+
+    <!-- Bottom Footer -->
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-sm">
+      <p class="text-gray-400 font-medium">
+        &copy; {{ currentYear }} JobFinder. Tous droits réservés.
+      </p>
+      <div class="flex flex-wrap justify-center gap-6">
+        <a routerLink="/privacy" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 font-medium">
+          Confidentialité
+        </a>
+        <a routerLink="/terms" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 font-medium">
+          Conditions
+        </a>
+        <a routerLink="/cookies" class="text-gray-400 hover:text-pink-500 transition-colors duration-300 font-medium">
+          Cookies
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

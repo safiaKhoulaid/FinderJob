@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "email": "test@youcode.ma",
+      "password": "123",
+      "nom": "Khoulaid",
+      "prenom": "Safia"
+    },
+    {
+      "id": "4477"
+    },
+    {
+      "id": "b2c5"
+    },
+    {
+      "id": "8e52"
+    },
+    {
+      "id": "5b39"
+    },
+    {
+      "id": "0418"
+    },
+    {
+      "id": "9965"
+    },
+    {
+      "id": "46c5"
+    },
+    {
+      "id": "8a45"
+    },
+    {
+      "id": "18a9"
+    },
+    {
+      "id": "3b9a",
+      "firstName": "Kirestin",
+      "lastName": "Sit corrupti aliqu",
+      "email": "wude@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "46ae",
+      "firstName": "Bell",
+      "lastName": "Iusto pariatur Volu",
+      "email": "varezos@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "9b81",
+      "firstName": "Mira",
+      "lastName": "Distinctio Laborios",
+      "email": "wipuwera@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "2eee",
+      "firstName": "Kevin",
+      "lastName": "Quis perferendis mag",
+      "email": "cokuteky@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "0478",
+      "firstName": "Sonia",
+      "lastName": "Velit asperiores cor",
+      "email": "nytiwu@mailinator.com",
+      "password": "Pa$$w0rd!"
+    },
+    {
+      "id": "1120",
+      "firstName": "safia",
+      "lastName": "khoulaid",
+      "email": "safiakhoulaid11@gmail.com",
+      "password": "123456",
+      "location": "safi",
+      "telephone": "+212713116389"
+    }
+  ],
+  "favoritesOffers": [
+    {
+      "id": "1",
+      "userId": 1,
+      "offerId": "101",
+      "title": "Développeur Angular",
+      "company": "Maroc Telecom",
+      "location": "Rabat"
+    }
+  ],
+  "applications": [
+    {
+      "id": "1",
+      "userId": 1,
+      "offerId": "202",
+      "title": "Full Stack Java",
+      "company": "OCP",
+      "location": "Jorf Lasfar",
+      "status": "en_attente",
+      "notes": "Entretien le 15/02"
+    }
+  ]
+}

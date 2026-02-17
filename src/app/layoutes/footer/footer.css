@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+footer {
+  margin-top: auto;
+}
+
+/* Smooth transitions for social links */
+:host ::ng-deep a {
+  transition: color 300ms ease-in-out;
+}
+
+/* Ensure footer sticks to bottom */
+:host ::ng-deep {
+  display: block;
+}
