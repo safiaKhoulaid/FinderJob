@@ -3,7 +3,6 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts}",
   ],
-  // Safelist pour classes utilisées dynamiquement dans les bindings Angular
   safelist: [
     'bg-green-500',
     'bg-red-500',
