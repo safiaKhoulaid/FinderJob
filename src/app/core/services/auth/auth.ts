@@ -9,14 +9,16 @@ import {LoginRequest} from '../../models/loginRequest';
 @Injectable({
   providedIn: 'root'
 })
+
 export class AuthService {
+
   private http = inject(HttpClient);
   private apiUrl = 'http://localhost:3000/users';
 
-  // Signal pour l'état de l'utilisateur
   currentUser = signal<User | null>(null);
 
   constructor() {
+
     const storedUser = localStorage.getItem('user');
 
     if (storedUser) {
@@ -29,7 +31,6 @@ export class AuthService {
       this.logout();
     }
 
-    console.log("user====" , this.currentUser)
   }
 
   isLoggedIn(): boolean {
@@ -37,8 +38,10 @@ export class AuthService {
   }
 
 
+  // ========= REGISTER =========
 
   register(user: User): Observable<User> {
+    
     // 1. Check wach l-email deja kayn
     return this.http.get<User[]>(`${this.apiUrl}?email=${user.email}`).pipe(
       switchMap((users) => {
@@ -71,7 +74,6 @@ export class AuthService {
       
       localStorage.setItem('user', JSON.stringify(userSafe));
       this.currentUser.set(userSafe as User);
-      console.log("LocalStorage updated:", localStorage.getItem('user'));
     })
   );
 }

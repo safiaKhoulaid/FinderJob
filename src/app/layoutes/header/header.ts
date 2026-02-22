@@ -21,9 +21,6 @@ export class HeaderComponent {
   isLoggedIn = computed(() => !!this.currentUser());
 
   constructor() {
-    console.log("currentUser", this.currentUser);
-    console.log("isLoggedIn", this.isLoggedIn());
-
   }
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;

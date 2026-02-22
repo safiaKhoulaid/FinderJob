@@ -76,19 +76,18 @@
       "email": "safiakhoulaid11@gmail.com",
       "password": "123456",
       "location": "safi",
-      "telephone": "+212713116389"
-    }
-  ],
-  "favoritesOffers": [
+      "telephone": "+212713116389",
+      "avatar": "data:image/jpeg;base64,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"
+    },
     {
-      "id": "1",
-      "userId": 1,
-      "offerId": "101",
-      "title": "Développeur Angular",
-      "company": "Maroc Telecom",
-      "location": "Rabat"
+      "id": "d0a2",
+      "firstName": "safia",
+      "lastName": "khoulaid",
+      "email": "safiakhoulaid@gmail.com",
+      "password": "123456"
     }
   ],
+  "favorites": [],
   "applications": [
     {
       "id": "1",
@@ -99,6 +98,22 @@
       "location": "Jorf Lasfar",
       "status": "en_attente",
       "notes": "Entretien le 15/02"
+    },
+    {
+      "id": "1771424388950",
+      "userId": "1120",
+      "jobTitle": "(Senior) Fullstack Software Engineer (m/f/d)",
+      "company": "Indra Avitech GmbH",
+      "companyLogo": "https://ui-avatars.com/api/?name=Indra%20Avitech%20GmbH&background=random",
+      "position": "(Senior) Fullstack Software Engineer (m/f/d)",
+      "location": "Friedrichshafen",
+      "salary": "Salaire non spécifié",
+      "status": "accepted",
+      "appliedDate": "2026-02-18T14:19:48.950Z",
+      "coverLetter": "",
+      "jobDescription": "<h2>Ihre Aufgaben</h2>\n<ul>\n<li>Utilize your expertise to design, develop, test, deploy, maintain, and improve our software</li>\n<li>Produce code that follows high quality standards and take full ownership of your work</li>\n<li>Translate mockups from designers into performant React components and applications</li>\n<li>Contribute to solutions design, create, update, improve product architecture and optimize product performance</li>\n<li>Review, maintain and refactor to meet the requirements for improved or new features</li>\n</ul>\n<h2>Ihr Profil</h2>\n<ul>\n<li>2+ years of experience developing with React, preferably with TypeScript</li>\n<li>Production value and attention to detail are required</li>\n<li>Experience in communicating with cross-functional and technical teams, as well as product management to collect requirements, describe software product features, technical designs, and engineering/product strategy</li>\n<li>Relevant Experience in Webpack, NPM, Yarn</li>\n<li>Basic understanding of CSS Modules, SASS and component libraries such as Ant Design</li>\n<li>Background in building complex user-facing features, and writing well-structured, efficient, and maintainable code</li>\n</ul>\n<h2>Warum wir?</h2>\n<ul>\n<li>Flexitime without core working time</li>\n<li>30 days holiday</li>\n<li>Good work-life balance due to mobile working</li>\n<li>Workation is possible</li>\n<li>Individual support with regular further training programmes</li>\n<li>Working in international teams</li>\n<li>Possibility to use Jobrad, Wellpass, Deutschlandticket, Edenred City Card, corporate benefits</li>\n<li>Workplace in the four-country region on Lake Constance with attractive leisure opportunities</li>\n</ul>\n<p>Find more <a href=\"https://www.arbeitnow.com/english-speaking-jobs\">English Speaking Jobs in Germany</a> on Arbeitnow</a>",
+      "requirements": [],
+      "notes": ""
     }
   ]
 }
